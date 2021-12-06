@@ -10,21 +10,9 @@ import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import WorkOutlineIcon from '@mui/icons-materialimport React from "react"
-import "./sidebar.css"
-import LineStyleIcon from '@mui/icons-material/LineStyle';
-import TimelineIcon from '@mui/icons-material/Timeline';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import StorefrontIcon from '@mui/icons-material/Storefront';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import ReportIcon from '@mui/icons-material/Report';
-
+import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
     return (
@@ -45,12 +33,16 @@ export default function Sidebar() {
                     </ul>
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="silebarList">
-                        <li className="silebarListItem">
-                            <PersonOutlineIcon className="sidebarIcon" /> Users
-                        </li>
-                        <li className="silebarListItem">
-                            <StorefrontIcon className="sidebarIcon" /> Products
-                        </li>
+                        <Link to="/users" className="link">
+                            <li className="silebarListItem">
+                                <PersonOutlineIcon className="sidebarIcon" /> Users
+                            </li>
+                        </Link>
+                        <Link to="/products" className="link">
+                            <li className="silebarListItem">
+                                <StorefrontIcon className="sidebarIcon" /> Products
+                            </li>
+                        </Link>
                         <li className="silebarListItem">
                             <ReceiptLongIcon className="sidebarIcon"/> Transactions
                         </li>

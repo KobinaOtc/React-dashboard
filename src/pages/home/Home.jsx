@@ -1,11 +1,4 @@
-.home{
-    flex: 4;
-}
-
-.homeWidgets{
-    display: flex;
-    margin: 20px;
-}import React from "react"
+import React from "react"
 import Chart from "../../charts/Chart"
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo"
 import "./home.css"

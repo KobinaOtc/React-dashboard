@@ -6,14 +6,6 @@ export default function Chart(props) {
 
     return (
         <div className="chart">
-            <h3 className="chimport React from 'react'
-import "./chart.css"
-import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-
-export default function Chart(props) {
-
-    return (
-        <div className="chart">
             <h3 className="chartTitle">{props.title}</h3>
             <ResponsiveContainer width="100%" aspect={4 / 1}>
 
